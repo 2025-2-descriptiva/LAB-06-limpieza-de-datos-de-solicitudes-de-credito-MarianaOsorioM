@@ -20,7 +20,7 @@ def pregunta_01():
     """
     input_path = "files/input/solicitudes_de_credito.csv"
     df = pd.read_csv(input_path, sep=";", index_col=0, encoding="utf-8")
-    df = df.copy()
+    #df = df.copy()
 
     df['sexo']=df['sexo'].str.lower().str.strip()
     df['tipo_de_emprendimiento']=df['tipo_de_emprendimiento'].str.lower().str.strip()
